@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{2074F7EF-493E-A9AF-B524-91DB4BAE86A8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Box.cs">
+    <Files>
+      <File FileName="Assets/Bullet.cs" Line="23" Column="1" />
+      <File FileName="Assets/Sphere.cs" Line="80" Column="6" />
+      <File FileName="Assets/Box.cs" Line="31" Column="5" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BOSTONHACKS" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d45c26b3-0cb0-4f08-93d5-d509b48b3541" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
