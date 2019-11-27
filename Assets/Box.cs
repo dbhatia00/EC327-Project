@@ -9,12 +9,14 @@ public class Box : MonoBehaviour
 
 	Rigidbody2D box;
     public GameObject BulletR, BulletL;
+    public GameObject BulletRU, BulletLU;
     Vector2 bulletpos;
     Vector2 ranPos;
    public const float fireRate = 0.5f;
     float nextFire = 0.0f;
     public  bool facingRight;
     bool rightEdge;
+    public Transform Sphere;
 
     //Vector2 BBpox;
     public float boxSpeed;
@@ -28,7 +30,6 @@ public class Box : MonoBehaviour
 	}
 
 
-    
 
     // Update is called once per frame
 
@@ -37,7 +38,7 @@ public class Box : MonoBehaviour
 	{
 
         Vector2 bpos = this.transform.position;
-		if (bpos.x >= 16)
+        if (bpos.x >= 16)
 		{
 			rightEdge = true;
 		}
@@ -48,6 +49,7 @@ public class Box : MonoBehaviour
 
 		if (rightEdge == true)
 		{
+
 			bpos.x -= boxSpeed;
             this.transform.position = bpos;
             facingRight = false;
@@ -59,13 +61,20 @@ public class Box : MonoBehaviour
 		}
 		this.transform.position = bpos;
 
+        /*transform.LookAt(Sphere);
+
+        if(Vector2.Distance(bpos, Sphere.position) >= 0)
+        {
+            transform.position += transform.forward * boxSpeed;
+        }
+        */
         if (bpos.y < -10)
         {
             Destroy(gameObject);
 
         }
 
-        Debug.Log(fireRate);
+        //Debug.Log(fireRate);
 
         if (Time.time > nextFire)
         {
@@ -101,18 +110,36 @@ public class Box : MonoBehaviour
     {
         bulletpos = transform.position;
 
+        if (Time.time >= 20)
+        {
+            Instantiate(BulletRU, bulletpos, Quaternion.identity);
+            Instantiate(BulletLU, bulletpos, Quaternion.identity);
+        }
+
         if (facingRight)
         {
             bulletpos += new Vector2(+1f, -0.2f);
+            
             Instantiate(BulletR, bulletpos, Quaternion.identity);
+
+            if (Time.time >= 10)
+            {
+                Instantiate(BulletL, bulletpos, Quaternion.identity);
+            }
         }
         else
         {
             bulletpos += new Vector2(-1f, -0.2f);
             Instantiate(BulletL, bulletpos, Quaternion.identity);
+
+            if (Time.time >= 10)
+            {
+                Instantiate(BulletR, bulletpos, Quaternion.identity);
+            }
         }
     }
 
 
 }
 
+  
