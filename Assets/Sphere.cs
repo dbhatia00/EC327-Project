@@ -11,6 +11,8 @@ public class Sphere : MonoBehaviour
     public GameObject BulletR, BulletL;
     Vector2 bulletpos;
     public float fireRate = 0.5f, jumpRate = 0.7f;
+
+    static int count = 0;
     
     float nextFire = 0.0f, nextJump = 0.0f;
     bool facingRight = true;
@@ -71,12 +73,19 @@ public class Sphere : MonoBehaviour
             Debug.Log("shot");
         }
 
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
-        this.gameObject.SetActive(false);
+        count++;
+        if (count == 3)
+        {
+            Destroy(other.gameObject);
+            this.gameObject.SetActive(false);
+        }
+     
+        Debug.Log("hit " + count);
     }
 
 
