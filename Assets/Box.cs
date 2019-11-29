@@ -19,6 +19,11 @@ public class Box : MonoBehaviour
     bool rightEdge;
     public Transform Sphere;
 
+    float next;
+    int count;
+
+    Vector2 bpos;
+
     //Vector2 BBpox;
     public float boxSpeed;
 	//Vector2 bpos = box.position;
@@ -28,6 +33,7 @@ public class Box : MonoBehaviour
         ranPos = this.transform.position;
         facingRight = false;
         //Debug.Log(yPos);
+        rightEdge = true;
 	}
 
 
@@ -38,7 +44,7 @@ public class Box : MonoBehaviour
     void Update()
 	{
 
-        Vector2 bpos = this.transform.position;
+        bpos = this.transform.position;
         if (bpos.x >= 16)
 		{
 			rightEdge = true;
@@ -48,20 +54,24 @@ public class Box : MonoBehaviour
 			rightEdge = false;
 		}
 
-		if (rightEdge == true)
-		{
 
-			bpos.x -= boxSpeed;
+        /*if (rightEdge == true)
+        {
+
+            bpos.x -= boxSpeed;
             this.transform.position = bpos;
             facingRight = false;
-		}
-		else
-		{
+        }
+        else
+        {
             bpos.x += boxSpeed;
             facingRight = true;
-		}
-		this.transform.position = bpos;
+        }
 
+
+    this.transform.position = bpos;*/
+            
+            move();
         /*transform.LookAt(Sphere);
 
         if(Vector2.Distance(bpos, Sphere.position) >= 0)
@@ -85,26 +95,66 @@ public class Box : MonoBehaviour
         }
         
 	}
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("hit");
 
-        Destroy(other.gameObject);
-        /*int ranb = Random.Range(0, 10) % 2;
-        Debug.Log(ranb);
-        if (ranb == 1)
+    void wait()
+    {
+
+    }
+    void move()
+    {
+        if (rightEdge == true)
         {
-            facingRight = true;
+
+            bpos.x -= boxSpeed;
+            this.transform.position = bpos;
+            facingRight = false;
         }
         else
         {
-            facingRight = false;
+            bpos.x += boxSpeed;
+            facingRight = true;
         }
-        ranPos.x = Random.Range(-8.0f, 8.0f);
 
-        Instantiate(this.gameObject, ranPos, Quaternion.identity);*/
-        this.gameObject.SetActive(false);
 
+        this.transform.position = bpos;
+    }
+
+    bool flag()
+    {
+        next = Time.time + 4;
+
+        if (Time.time > next)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Bhit");
+        count++;
+        if (count == 3)
+        {
+            Destroy(other.gameObject);
+            /*int ranb = Random.Range(0, 10) % 2;
+            Debug.Log(ranb);
+            if (ranb == 1)
+            {
+                facingRight = true;
+            }
+            else
+            {
+                facingRight = false;
+            }
+            ranPos.x = Random.Range(-8.0f, 8.0f);
+
+            Instantiate(this.gameObject, ranPos, Quaternion.identity);*/
+            this.gameObject.SetActive(false);
+        }
     }
 
     void fire()
