@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Horizontal: 1
-  impluseRate: 3
+  impluseRate: 2
 --- !u!61 &515156931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -318,8 +318,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515156929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.55, y: -10.18, z: 0}
-  m_LocalScale: {x: 18.567083, y: 1.6607872, z: 1}
+  m_LocalPosition: {x: -19.635, y: -12.442, z: 0}
+  m_LocalScale: {x: 18.399979, y: 6.1864324, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -487,17 +487,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8b5247cad69be49b53c101071e575d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x1: 17
-  y1: 0
-  x2: 17
-  y2: -10
-  x3: 25
-  y3: -10
-  x4: 0
-  y4: 0
   PointNum: 3
   DriftV: 5
   RotateW: 5
+  RoutL:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
   Drift_1_Rotate_2: 2
 --- !u!61 &950004017
 BoxCollider2D:
@@ -579,8 +576,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950004015}
   m_LocalRotation: {x: -0, y: -0, z: 0.47908673, w: 0.8777676}
-  m_LocalPosition: {x: -7.63, y: 7.61, z: -6.7241783}
-  m_LocalScale: {x: 8.25, y: 4.220972, z: 1}
+  m_LocalPosition: {x: -20.22, y: 2.11, z: -6.7241783}
+  m_LocalScale: {x: 16.5825, y: 3.8410847, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -952,6 +949,7 @@ GameObject:
   - component: {fileID: 1940518638}
   - component: {fileID: 1940518637}
   - component: {fileID: 1940518636}
+  - component: {fileID: 1940518642}
   m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Ground
@@ -983,17 +981,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8b5247cad69be49b53c101071e575d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x1: 17
-  y1: 0
-  x2: 17
-  y2: -10
-  x3: 25
-  y3: -10
-  x4: 0
-  y4: 0
   PointNum: 3
   DriftV: 5
   RotateW: 5
+  RoutL:
+  - {x: 17, y: 5.7}
+  - {x: 17, y: -5}
+  - {x: 22, y: -5}
+  - {x: 0, y: 0}
   Drift_1_Rotate_2: 1
 --- !u!61 &1940518638
 BoxCollider2D:
@@ -1075,12 +1070,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940518635}
   m_LocalRotation: {x: -0, y: -0, z: 0.47908673, w: 0.8777676}
-  m_LocalPosition: {x: 17.5, y: 5.7, z: -6.7241783}
-  m_LocalScale: {x: 8.25, y: 4.220972, z: 1}
+  m_LocalPosition: {x: 17.91, y: 5.58, z: -6.7241783}
+  m_LocalScale: {x: 9.848025, y: 3.4189873, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 57.252003}
+--- !u!114 &1940518642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940518635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b5247cad69be49b53c101071e575d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointNum: 0
+  DriftV: 0
+  RotateW: 9
+  RoutL:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  Drift_1_Rotate_2: 2
 --- !u!1 &1999330434
 GameObject:
   m_ObjectHideFlags: 0
