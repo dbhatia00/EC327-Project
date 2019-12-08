@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Box.cs" />
     <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\DynamicBlock.cs" />
     <Compile Include="Assets\Grounded.cs" />
     <Compile Include="Assets\Sphere.cs" />
     <Reference Include="Unity.Timeline.Editor">
