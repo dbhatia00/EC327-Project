@@ -13,11 +13,12 @@ public class DynamicBlock : BasicBlock
     public Vector2[] RoutL = new Vector2[4];
     private Vector3 targetPosition;
     public int Drift_1_Rotate_2;
+    public bool Start_From0;
 
     void Start()
     {
 
-        if (Drift_1_Rotate_2 == 1)
+        if (Drift_1_Rotate_2 == 1 && Start_From0)
         {
             transform.position = new Vector3(RoutL[0].x, RoutL[0].y, 0);
         }
