@@ -63,10 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BasicBlock.cs" />
     <Compile Include="Assets\Box.cs" />
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\DynamicBlock.cs" />
+    <Compile Include="Assets\Enemy1.cs" />
+    <Compile Include="Assets\EnemyObjects.cs" />
     <Compile Include="Assets\Grounded.cs" />
+    <Compile Include="Assets\JustToQuit.cs" />
     <Compile Include="Assets\Sphere.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ryuichi/Desktop/EC327-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -17,6 +17,7 @@ public class Sphere : MonoBehaviour
     float nextFire = 0.0f, nextJump = 0.0f;
     bool facingRight = true;
     public bool isGrounded = false;
+    public float playerSpeed;
 
     void Start()
     {
@@ -47,7 +48,7 @@ public class Sphere : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             Vector3 position = this.transform.position;
-            position.x -= 0.3f;
+            position.x -= playerSpeed;
             this.transform.position = position;
             facingRight = false;
         }
@@ -55,7 +56,7 @@ public class Sphere : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             Vector3 position = this.transform.position;
-            position.x += 0.3f;
+            position.x += playerSpeed;
             this.transform.position = position;
             facingRight = true;
         }
@@ -72,6 +73,7 @@ public class Sphere : MonoBehaviour
             fire();
             Debug.Log("shot");
         }
+
 
         if (transform.position.y < -100)
         {

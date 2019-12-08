@@ -24,8 +24,11 @@ public class Box : MonoBehaviour
 
     Vector2 bpos;
 
+    Vector2 startPos;
+
     //Vector2 BBpox;
     public float boxSpeed;
+    public float boxRange;
 	//Vector2 bpos = box.position;
 	// Start is called before the first frame update
 	void Start()
@@ -34,6 +37,7 @@ public class Box : MonoBehaviour
         facingRight = false;
         //Debug.Log(yPos);
         rightEdge = true;
+        startPos = transform.position;
 	}
 
 
@@ -45,11 +49,11 @@ public class Box : MonoBehaviour
 	{
 
         bpos = this.transform.position;
-        if (bpos.x >= 16)
+        if (bpos.x >= startPos.x + boxRange)
 		{
 			rightEdge = true;
 		}
-		if (bpos.x <= -16)
+		if (bpos.x <= startPos.x - boxRange)
 		{
 			rightEdge = false;
 		}

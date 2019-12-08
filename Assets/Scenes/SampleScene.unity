@@ -350,6 +350,7 @@ MonoBehaviour:
   fireRate: 0.5
   jumpRate: 0.7
   isGrounded: 0
+  playerSpeed: 0.3
 --- !u!1 &733995869
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +802,7 @@ MonoBehaviour:
   facingRight: 1
   Sphere: {fileID: 563133474}
   boxSpeed: 0.03
+  boxRange: 5
 --- !u!1 &1890339543
 GameObject:
   m_ObjectHideFlags: 0
