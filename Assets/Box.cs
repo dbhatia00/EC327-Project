@@ -79,11 +79,11 @@ public class Box : MonoBehaviour
             transform.position += transform.forward * boxSpeed;
         }
         */
-        if (bpos.y < -10)
+        /*if (bpos.y < -10)
         {
             Destroy(gameObject);
 
-        }
+        }*/
 
         //Debug.Log(fireRate);
 
@@ -106,12 +106,13 @@ public class Box : MonoBehaviour
         {
 
             bpos.x -= boxSpeed;
-            this.transform.position = bpos;
+            //this.transform.position = bpos;
             facingRight = false;
         }
         else
         {
             bpos.x += boxSpeed;
+            //this.transform.position = bpos;
             facingRight = true;
         }
 
@@ -139,7 +140,9 @@ public class Box : MonoBehaviour
         count++;
         if (count == 3)
         {
-            Destroy(other.gameObject);
+            Destroy(other);
+
+            
             /*int ranb = Random.Range(0, 10) % 2;
             Debug.Log(ranb);
             if (ranb == 1)
@@ -161,7 +164,7 @@ public class Box : MonoBehaviour
     {
         bulletpos = transform.position;
 
-        bulletpos += new Vector2(1f, -0.2f);
+        /*bulletpos += new Vector2(1f, -0.2f);
 
         Instantiate(BulletRU, bulletpos, Quaternion.identity);
         Instantiate(BulletR, bulletpos, Quaternion.identity);
@@ -171,15 +174,15 @@ public class Box : MonoBehaviour
         bulletpos += new Vector2(-1f, -0.2f);
 
         Instantiate(BulletLU, bulletpos, Quaternion.identity);
-        Instantiate(BulletL, bulletpos, Quaternion.identity);
+        Instantiate(BulletL, bulletpos, Quaternion.identity);*/
      
-        /*if (facingRight)
+        if (facingRight)
         {
             bulletpos += new Vector2(+1f, -0.2f);
             
             Instantiate(BulletR, bulletpos, Quaternion.identity);
 
-            if (Time.time >= 10)
+            /*if (Time.time >= 10)
             {
                 bulletpos = transform.position;
                 bulletpos += new Vector2(-2f, -0.2f);
@@ -193,14 +196,14 @@ public class Box : MonoBehaviour
                 bulletpos = transform.position;
                 bulletpos += new Vector2(-1f, 0f);
                 Instantiate(BulletLU, bulletpos, Quaternion.identity);
-            }
+            }*/
         }
         else
         {
             bulletpos += new Vector2(-1f, -0.2f);
             Instantiate(BulletL, bulletpos, Quaternion.identity);
 
-            if (Time.time >= 10)
+            /*if (Time.time >= 10)
             {
                 bulletpos = transform.position;
                 bulletpos += new Vector2(2f, -0.2f);
@@ -214,8 +217,8 @@ public class Box : MonoBehaviour
                 bulletpos = transform.position;
                 bulletpos += new Vector2(-1f, 0f);
                 Instantiate(BulletRU, bulletpos, Quaternion.identity);
-            }
-        }*/
+            }*/
+        }
     }
 
 

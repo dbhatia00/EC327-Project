@@ -73,7 +73,11 @@ public class Sphere : MonoBehaviour
             Debug.Log("shot");
         }
 
-
+        if (transform.position.y < -100)
+        {
+            Destroy(this);
+            this.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -81,7 +85,8 @@ public class Sphere : MonoBehaviour
         count++;
         if (count == 3)
         {
-            Destroy(other.gameObject);
+            Camera.main.transform.parent = null;
+            Destroy(this);
             this.gameObject.SetActive(false);
         }
      
