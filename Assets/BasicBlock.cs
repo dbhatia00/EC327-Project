@@ -16,11 +16,13 @@ public class BasicBlock : MonoBehaviour
 
     protected virtual void BulletsOn(Collider2D collision)
     {
+        Destroy(collision.gameObject);
         //Things happens when bullets on the block
     }
 
     protected virtual void BulletsOn(Collision2D collision)
     {
+        Destroy(collision.gameObject);
         //Things happens when bullets on the block
     }
 
@@ -48,5 +50,7 @@ public class BasicBlock : MonoBehaviour
             BulletsOn(collision);
         }
     }
+
+ 
 
 }

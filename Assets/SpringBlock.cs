@@ -10,6 +10,16 @@ public class SpringBlock : BasicBlock
 
     private Vector2 contactImpluse;
 
+    protected override void BulletsOn(Collider2D collision)
+    {
+        //Things happens when bullets on the block
+    }
+    protected override void BulletsOn(Collision2D collision)
+    {
+        //Things happens when bullets on the block
+    }
+
+
     protected override void PlayersOn(Collision2D collision)
     {
         contactImpluse = collision.relativeVelocity;

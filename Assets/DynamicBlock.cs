@@ -6,6 +6,7 @@ public class DynamicBlock : BasicBlock
 {
     // Start is called before the first frame update
     public int PointNum;
+    public bool loop;
     private int currentP = 0,targeP = 1;
     public float DriftV;
     public float RotateW;
@@ -27,6 +28,16 @@ public class DynamicBlock : BasicBlock
 
     }
 
+
+    protected override void BulletsOn(Collider2D collision)
+    {
+        //Things happens when bullets on the block
+    }
+    protected override void BulletsOn(Collision2D collision)
+    {
+        //Things happens when bullets on the block
+    }
+
     private void MotionDrift()
     {
         targetPosition = new Vector3(RoutL[targeP].x, RoutL[targeP].y, transform.position.z);
@@ -44,7 +55,14 @@ public class DynamicBlock : BasicBlock
         }
         if (targeP == PointNum)
         {
+            if (!loop)
+            {
+                transform.position = new Vector3(RoutL[0].x, RoutL[0].y, transform.position.z);
+                targeP = 1;
+            }
+            else
             targeP = 0;
+
         }
     }
 

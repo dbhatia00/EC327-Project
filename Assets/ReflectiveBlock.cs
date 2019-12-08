@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReflectiveBlock : BasicBlock
 {
-    private Object BulletModel;
+    public Object BulletModel;
     private Bullet BulletIn;
     private Vector2 reBulletDir;
     private float reBulletVel;
@@ -16,7 +16,7 @@ public class ReflectiveBlock : BasicBlock
 
     private void Start()
     {
-        BulletModel = Resources.Load("BulletG");
+      
     }
 
 
