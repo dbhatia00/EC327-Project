@@ -6,6 +6,7 @@ public class DeathZone : MonoBehaviour
 {
     // Start is called before the first frame update
     public Vector3 reswarpP;
+    private BoxCollider2D TheZone;
     void Start()
     {
         
@@ -16,7 +17,9 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GetComponent<BoxCollider2D>().enabled = false; // making sure not have double shoot
             collision.gameObject.transform.position = reswarpP;
+            GetComponent<BoxCollider2D>().enabled = true;
         }
 
     }
