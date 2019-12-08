@@ -11,7 +11,7 @@ public class Box : MonoBehaviour
     public GameObject BulletR, BulletL;
     Vector2 bulletpos;
     Vector2 ranPos;
-   public const float fireRate = 0.5f;
+   public const float fireRate = 1f;
     float nextFire = 0.0f;
     public  bool facingRight;
     bool rightEdge;

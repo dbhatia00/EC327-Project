@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-
 public class Sphere : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody2D rigidbody2d;
     public GameObject BulletR, BulletL;
+    public CharacterHealth Healthbar;
     Vector2 bulletpos;
     public float fireRate = 0.5f, jumpRate = 0.7f;
     
@@ -76,7 +74,8 @@ public class Sphere : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
+        Healthbar.DealDamage(5);
     }
 
 
