@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class JustToQuit : MonoBehaviour
@@ -16,6 +17,12 @@ public class JustToQuit : MonoBehaviour
         if (Input.GetKey("escape"))
         {
             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Application.LoadLevel(0);
         }
     }
 }

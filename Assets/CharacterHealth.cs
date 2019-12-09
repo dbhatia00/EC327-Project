@@ -35,7 +35,9 @@ public class CharacterHealth : MonoBehaviour
 
     void Die(){
         CurrentHealth = 0;
+        Camera.main.transform.parent = null;
         this.gameObject.SetActive(false);
         //this.CharacterHealth.SetActive(false);
+        Destroy(this);
     }
 }

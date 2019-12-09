@@ -19,6 +19,8 @@ public class Sphere : MonoBehaviour
     public bool isGrounded = false;
     public float playerSpeed;
 
+    public CharacterHealth Healthbar;
+
     void Start()
     {
         //startPos = transform.position;
@@ -84,7 +86,10 @@ public class Sphere : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        count++;
+        Destroy(other.gameObject);
+
+        Healthbar.DealDamage(5);
+        /*count++;
         if (count == 3)
         {
             Camera.main.transform.parent = null;
@@ -92,8 +97,7 @@ public class Sphere : MonoBehaviour
             this.gameObject.SetActive(false);
         }
      
-        Debug.Log("hit " + count);
+        Debug.Log("hit " + count);*/
     }
-
 
 }

@@ -2,16 +2,20 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - CharacterHealth
     - DynamicBlock
     - Enemy1
     - JustToQuit
     - Sphere
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   sceneClasses:
     Assets/Scenes/StageNO1.unity:
     - Class: 1
@@ -45,23 +49,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 9674}
+    - Class: 114
       Script: {instanceID: 9756}
     - Class: 114
-      Script: {instanceID: 10058}
+      Script: {instanceID: 9776}
     - Class: 114
-      Script: {instanceID: 10236}
+      Script: {instanceID: 9868}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 10242}
     - Class: 114
-      Script: {instanceID: 12342}
+      Script: {instanceID: 10348}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 10900}
     - Class: 114
-      Script: {instanceID: 21964}
+      Script: {instanceID: 11020}
     - Class: 114
-      Script: {instanceID: 30680}
+      Script: {instanceID: 11306}
+    - Class: 114
+      Script: {instanceID: 11362}
+    - Class: 114
+      Script: {instanceID: 11394}
+    - Class: 114
+      Script: {instanceID: 12400}
+    - Class: 114
+      Script: {instanceID: 12402}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -69,6 +83,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -107,6 +127,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: d0e6ae7bb7714c0eb7add7db7ae01e0b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterHealth
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -175,6 +201,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 17003fb5b180c20aa9db10b4c0e74d33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyObjects
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -185,6 +217,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BasicBlock
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -281,6 +319,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JustToQuit
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -385,6 +429,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 17003fb5b180c20aa9db10b4c0e74d33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy1
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -445,7 +495,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: beda124000c70c01f50ecaf50c269b99
+      Hash: 8c4adb938533e3199d7d414455f2dd1f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sphere
@@ -515,31 +565,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BasicBlock
-  - hash:
-      serializedVersion: 2
-      Hash: 17003fb5b180c20aa9db10b4c0e74d33
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyObjects
-  - hash:
-      serializedVersion: 2
-      Hash: 17003fb5b180c20aa9db10b4c0e74d33
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Enemy1
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JustToQuit
   platform: 5
   scenePathNames:
   - Assets/Scenes/StageNO1.unity
-  playerPath: C:/Users/ryuichi/Desktop/Nice 2D game.exe
+  playerPath: C:/Users/ryuichi/Desktop/Test.exe

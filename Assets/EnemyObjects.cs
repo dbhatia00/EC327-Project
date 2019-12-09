@@ -65,6 +65,7 @@ public class EnemyObjects : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
+        Destroy(other.gameObject);
         count++;
         if (count == 3)
         {
