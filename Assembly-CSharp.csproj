@@ -66,6 +66,7 @@
     <Compile Include="Assets\BasicBlock.cs" />
     <Compile Include="Assets\Box.cs" />
     <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\CharacterHealth.cs" />
     <Compile Include="Assets\DynamicBlock.cs" />
     <Compile Include="Assets\Enemy1.cs" />
     <Compile Include="Assets\EnemyObjects.cs" />
