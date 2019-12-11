@@ -49,33 +49,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9674}
+      Script: {instanceID: 9678}
     - Class: 114
-      Script: {instanceID: 9756}
+      Script: {instanceID: 9760}
     - Class: 114
-      Script: {instanceID: 9776}
+      Script: {instanceID: 9780}
     - Class: 114
-      Script: {instanceID: 9868}
+      Script: {instanceID: 9872}
     - Class: 114
-      Script: {instanceID: 10064}
+      Script: {instanceID: 10068}
     - Class: 114
-      Script: {instanceID: 10242}
+      Script: {instanceID: 10246}
     - Class: 114
-      Script: {instanceID: 10348}
+      Script: {instanceID: 10352}
     - Class: 114
-      Script: {instanceID: 10900}
+      Script: {instanceID: 10904}
     - Class: 114
-      Script: {instanceID: 11020}
+      Script: {instanceID: 11024}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11394}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 12402}
+      Script: {instanceID: 12560}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -568,4 +568,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/StageNO1.unity
-  playerPath: C:/Users/ryuichi/Desktop/Test.exe
+  playerPath: C:/Users/devbh/OneDrive/Documents/Intro to Software/EC327-Project/Test.exe
