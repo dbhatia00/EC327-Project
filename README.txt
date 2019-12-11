@@ -1,6 +1,6 @@
 Team name: The college Drop-Outs
-Group Members: Dev Bhatia, Ryuichi Ohhata, Zhiyuan Liu, Justin Lam
-Member Emails: devb@bu.edu, ryu74@bu.edu, lzy2022@bu.edu, jlam8080@bu.edu
+Group Members: Dev Bhatia, Ryuichi Ohhata, Zhiyuan Liu, Justin Lam, James Wasson
+Member Emails: devb@bu.edu, ryu74@bu.edu, lzy2022@bu.edu, jlam8080@bu.edu, jwasson@bu.edu
 
 Project Overview:
 Our project is a 2D game similar to Mega Man where there is a stage with moving objects and roaming enemies that you can either avoid or kill.
