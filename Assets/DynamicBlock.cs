@@ -17,6 +17,8 @@ public class DynamicBlock : BasicBlock
 
     void Start()
     {
+        DriftV *= Time.deltaTime * 50;
+        RotateW *= Time.deltaTime * 50;
 
         if (Drift_1_Rotate_2 == 1 && Start_From0)
         {

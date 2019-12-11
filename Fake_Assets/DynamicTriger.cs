@@ -18,7 +18,10 @@ public class DynamicTriger : TrigerObject
 
     private void Start()
     {
-        initial_po = transform.position;
+       Drift_speed *= Time.deltaTime*50;
+        Rotate_speed *= Time.deltaTime * 50;
+
+    initial_po = transform.position;
         initial_angle = transform.eulerAngles;
         state = false;
         //quick fix on the angle

@@ -28,6 +28,8 @@ public class SpringBlock : BasicBlock
             if (collision.contacts[0].normal.x == 0)
             {
                 collision.rigidbody.velocity = new Vector2(collision.rigidbody.velocity.x, -contactImpluse.y * impluseRate);
+                if (collision.rigidbody.velocity.magnitude > 60)
+                    collision.rigidbody.velocity = collision.rigidbody.velocity.normalized * 15;
             }
         }
 
@@ -36,6 +38,8 @@ public class SpringBlock : BasicBlock
             if (collision.contacts[0].normal.y == 0)
             {
                 collision.rigidbody.velocity = new Vector2(-contactImpluse.x * impluseRate, collision.rigidbody.velocity.y);
+                if (collision.rigidbody.velocity.magnitude > 60)
+                    collision.rigidbody.velocity = collision.rigidbody.velocity.normalized * 15;
             }
         }
     }

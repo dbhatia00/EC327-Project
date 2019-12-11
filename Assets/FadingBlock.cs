@@ -39,7 +39,7 @@ public class FadingBlock : BasicBlock
     protected override void PlayersOn(Collision2D collision)
     {
         //Things happens when players on the block
-        if (collision.contacts[0].normal.x == 0 && notfading)
+        if (notfading)
         {
             notfading = false;
              StartCoroutine(fadingOut());

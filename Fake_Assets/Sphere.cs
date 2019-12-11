@@ -86,6 +86,7 @@ public class Sphere : MonoBehaviour
         }
      
         Debug.Log("hit " + count);
+        Debug.Log(Time.deltaTime);
     }
 
 
