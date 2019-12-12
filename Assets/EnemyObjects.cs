@@ -25,12 +25,12 @@ public class EnemyObjects : MonoBehaviour
     {
         if (rightEdge == true)
         {
-            bpos.x -= boxSpeed;
+            bpos.x -= boxSpeed*Time.deltaTime;
             facingRight =false;
         }
         else
         {
-            bpos.x += boxSpeed;
+            bpos.x += boxSpeed*Time.deltaTime;
             facingRight = true;
         }
 
@@ -44,12 +44,12 @@ public class EnemyObjects : MonoBehaviour
 
         if (facingRight)
         {
-            bulletpos += new Vector2(1f, -0.2f);
+            bulletpos += new Vector2(1.4f, -0.2f);
             Instantiate(BulletR, bulletpos, Quaternion.identity);
         }
         else
         {
-            bulletpos += new Vector2(-1f, -0.2f);
+            bulletpos += new Vector2(-1.4f, -0.2f);
             Instantiate(BulletL, bulletpos, Quaternion.identity);
         }
     }

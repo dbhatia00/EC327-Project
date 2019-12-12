@@ -132,5 +132,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a3b873679a244aba551f69b7cc8380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velX: -10
+  velX: -15
   velY: 0

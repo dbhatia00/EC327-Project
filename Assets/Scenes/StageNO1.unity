@@ -159,7 +159,7 @@ MonoBehaviour:
   fireRate: 0.5
   jumpRate: 0.7
   isGrounded: 0
-  playerSpeed: 0.1
+  playerSpeed: 10
   Healthbar: {fileID: 53213981}
 --- !u!61 &53213976
 BoxCollider2D:
@@ -331,7 +331,7 @@ MonoBehaviour:
   BulletR: {fileID: 4804741031298615470, guid: 37ea7b0d7764f47639b3ca8bcea1fa0c, type: 3}
   BulletL: {fileID: 8686767916329872857, guid: 488bc0f52c80442489fc16bd80c52c76, type: 3}
   fireRate: 0.5
-  boxSpeed: 0.03
+  boxSpeed: 4
   boxRange: 3
 --- !u!61 &192106177
 BoxCollider2D:

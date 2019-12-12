@@ -32,12 +32,12 @@ public class Sphere : MonoBehaviour
         
         if (facingRight)
         {
-            bulletpos += new Vector2(+1f, 0.0f);
+            bulletpos += new Vector2(+1.3f, 0.0f);
             Instantiate(BulletR, bulletpos, Quaternion.identity);
         }
         else
         {
-            bulletpos += new Vector2(-1f, 0.0f);
+            bulletpos += new Vector2(-1.3f, 0.0f);
             Instantiate(BulletL, bulletpos, Quaternion.identity);
         }
     }
@@ -50,7 +50,7 @@ public class Sphere : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             Vector3 position = this.transform.position;
-            position.x -= playerSpeed;
+            position.x -= playerSpeed*Time.deltaTime;
             this.transform.position = position;
             facingRight = false;
         }
@@ -58,7 +58,7 @@ public class Sphere : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             Vector3 position = this.transform.position;
-            position.x += playerSpeed;
+            position.x += playerSpeed*Time.deltaTime;
             this.transform.position = position;
             facingRight = true;
         }
