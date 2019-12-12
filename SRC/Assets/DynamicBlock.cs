@@ -13,11 +13,16 @@ public class DynamicBlock : BasicBlock
     public Vector2[] RoutL = new Vector2[4];
     private Vector3 targetPosition;
     public int Drift_1_Rotate_2;
+    public bool Start_From0;
+    private float dd;
+    private float rr;
 
     void Start()
     {
+        dd = DriftV*Time.deltaTime * 50;
+        rr = RotateW*Time.deltaTime * 50;
 
-        if (Drift_1_Rotate_2 == 1)
+        if (Drift_1_Rotate_2 == 1 && Start_From0)
         {
             transform.position = new Vector3(RoutL[0].x, RoutL[0].y, 0);
         }
@@ -42,7 +47,7 @@ public class DynamicBlock : BasicBlock
     {
         targetPosition = new Vector3(RoutL[targeP].x, RoutL[targeP].y, transform.position.z);
 
-        if (Vector3.Distance(transform.position,targetPosition) <= DriftV * 0.01f)
+        if (Vector3.Distance(transform.position,targetPosition) <= dd * 0.01f)
         {
             transform.position = targetPosition;
             currentP = targeP;
@@ -51,7 +56,7 @@ public class DynamicBlock : BasicBlock
         else
         {
 
-            transform.position += (targetPosition - transform.position).normalized * DriftV * 0.01f;
+            transform.position += (targetPosition - transform.position).normalized * dd * 0.01f;
         }
         if (targeP == PointNum)
         {
@@ -68,7 +73,7 @@ public class DynamicBlock : BasicBlock
 
     private void MotionRotate()
     {
-        transform.eulerAngles += new Vector3(0, 0, RotateW * 0.1f);
+        transform.eulerAngles += new Vector3(0, 0, rr * 0.1f);
     }
 
 

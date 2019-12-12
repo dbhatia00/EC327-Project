@@ -7,7 +7,7 @@ public class EnemyObjects : MonoBehaviour
     //this is abstract class
 
     public GameObject BulletR, BulletL;
-    Vector2 bulletpos;
+    protected Vector2 bulletpos;
     public float fireRate;
     protected float nextFire = 0.0f;
     protected bool rightEdge;
