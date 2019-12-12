@@ -12,13 +12,9 @@ In order to build our project, please clone the repo and navigate to the CP bran
 
 Youtube Video Link:
 
+Source Code Location:
+Please navigate to the Assets folder in the SourceCode folder. The code that we wrote is contained within the C# files in said folder. 
+
 Back Story:
 The main character of the game is James Wasson, who struggles tremendously through all the hardships the class has to offer. This includes multiple all-nighters, hundreds of red bulls, and year's worth of therapy because of PTSD.
 Will he beat the final boss and finish the class with at most a C, or will he die and change his major? Play the game, and decide his fate... His future is in your hands.
-
-
-
-
-
-
-
