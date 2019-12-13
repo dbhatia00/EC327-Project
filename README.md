@@ -12,10 +12,10 @@ How to play:
 Use the arrow keys to move horizontally and jump. Use space to shoot. Use the 'r' key to reset the stage. Use the escape key to quit to desktop.
 
 Build Overview:
-In order to build our project, please clone the repo and navigate to the CP branch (it should be the default branch). Navigate to the Program folder, find the "Densmore's Dungeon" executable file, and run the program. 
+In order to build our project, please clone the repo and navigate to the CP branch (it should be the default branch). Navigate to the SRC folder, find the "Densmore's Dungeon" executable file, and run the program. 
 
 Source Code Location:
-Please navigate to the Assets folder in the SourceCode folder. The code that we wrote is contained within the C# files in said folder. 
+Please navigate to SRC/Assets. The code that we wrote is contained within the C# files in said folder. 
 
 Youtube Video Link:
 
