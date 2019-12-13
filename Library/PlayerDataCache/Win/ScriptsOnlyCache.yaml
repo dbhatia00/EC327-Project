@@ -24,7 +24,6 @@ ScriptsOnlyBuild:
     - yellowColor
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -704,4 +703,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Full_Satge.unity
-  playerPath: C:/Users/ryuichi/Desktop/some/Test.exe
+  playerPath: C:/Users/ryuichi/Desktop/some/Densmore's Dungeon.exe
