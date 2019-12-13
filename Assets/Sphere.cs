@@ -87,7 +87,7 @@ public class Sphere : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        Healthbar.DealDamage(5);
+        Healthbar.DealDamage(2);
         /*count++;
         if (count == 3)
         {
