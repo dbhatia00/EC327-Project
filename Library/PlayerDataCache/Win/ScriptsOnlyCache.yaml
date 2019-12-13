@@ -77,49 +77,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9874}
     - Class: 114
-      Script: {instanceID: 10070}
+      Script: {instanceID: 9922}
     - Class: 114
-      Script: {instanceID: 10246}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 10250}
+      Script: {instanceID: 10248}
     - Class: 114
-      Script: {instanceID: 10310}
+      Script: {instanceID: 10252}
     - Class: 114
-      Script: {instanceID: 10358}
+      Script: {instanceID: 10312}
     - Class: 114
-      Script: {instanceID: 10452}
+      Script: {instanceID: 10356}
     - Class: 114
-      Script: {instanceID: 10460}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10528}
+      Script: {instanceID: 10456}
     - Class: 114
-      Script: {instanceID: 10630}
+      Script: {instanceID: 10464}
     - Class: 114
-      Script: {instanceID: 10918}
+      Script: {instanceID: 10532}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10544}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11094}
+      Script: {instanceID: 10924}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11004}
     - Class: 114
-      Script: {instanceID: 11262}
+      Script: {instanceID: 11046}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11176}
     - Class: 114
       Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11574}
-    - Class: 114
-      Script: {instanceID: 46048}
-    - Class: 114
-      Script: {instanceID: 110274}
+      Script: {instanceID: 11428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -245,6 +245,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 15cd8cde493a75a807fa327445588a88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy3
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -385,6 +391,12 @@ ScriptsOnlyBuild:
     className: SpringBlock
   - hash:
       serializedVersion: 2
+      Hash: 476eba16dfb90cda0c74bb8512638d24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullte_Launcher
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -437,6 +449,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: material
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: yellowColor
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -683,25 +701,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 476eba16dfb90cda0c74bb8512638d24
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bullte_Launcher
-  - hash:
-      serializedVersion: 2
-      Hash: 15cd8cde493a75a807fa327445588a88
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Enemy3
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: yellowColor
   platform: 5
   scenePathNames:
   - Assets/Scenes/Full_Satge.unity
-  playerPath: C:/Users/ryuichi/Desktop/Test.exe
+  playerPath: C:/Users/ryuichi/Desktop/some/Test.exe
