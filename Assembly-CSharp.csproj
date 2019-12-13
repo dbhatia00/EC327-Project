@@ -66,6 +66,7 @@
     <Compile Include="Assets\BasicBlock.cs" />
     <Compile Include="Assets\Box.cs" />
     <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\Bullte_Launcher.cs" />
     <Compile Include="Assets\button_Player.cs" />
     <Compile Include="Assets\CameraControl.cs" />
     <Compile Include="Assets\CharacterHealth.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\DynamicTriger.cs" />
     <Compile Include="Assets\Enemy1.cs" />
     <Compile Include="Assets\Enemy2.cs" />
+    <Compile Include="Assets\Enemy3.cs" />
     <Compile Include="Assets\EnemyObjects.cs" />
     <Compile Include="Assets\FadingBlock.cs" />
     <Compile Include="Assets\Grounded.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Assets\Sphere.cs" />
     <Compile Include="Assets\SpringBlock.cs" />
     <Compile Include="Assets\TrigerObject.cs" />
+    <Compile Include="Assets\yellowColor.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ryuichi/Desktop/EC327-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

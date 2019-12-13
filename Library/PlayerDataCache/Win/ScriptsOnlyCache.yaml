@@ -3,12 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BasicBlock
     - Bullet
+    - Bullte_Launcher
     - CameraControl
     - CharacterHealth
     - DynamicBlock
     - DynamicTriger
     - Enemy1
     - Enemy2
+    - Enemy3
     - FadingBlock
     - JustToQuit
     - Pin
@@ -19,6 +21,7 @@ ScriptsOnlyBuild:
     - button_Player
     - material
     - needle
+    - yellowColor
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -72,8 +75,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9850}
     - Class: 114
-      Script: {instanceID: 9866}
-    - Class: 114
       Script: {instanceID: 9874}
     - Class: 114
       Script: {instanceID: 10070}
@@ -113,6 +114,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11390}
     - Class: 114
       Script: {instanceID: 11422}
+    - Class: 114
+      Script: {instanceID: 11574}
+    - Class: 114
+      Script: {instanceID: 46048}
+    - Class: 114
+      Script: {instanceID: 110274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -676,6 +683,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 476eba16dfb90cda0c74bb8512638d24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullte_Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: 15cd8cde493a75a807fa327445588a88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy3
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: yellowColor
   platform: 5
   scenePathNames:
   - Assets/Scenes/Full_Satge.unity
