@@ -19,6 +19,8 @@ Please navigate to SRC/Assets. The code that we wrote is contained within the C#
 
 Youtube Video Link:
 
+(Apologies for the watermark, all of the free software would play at a horrible frame rate)
+
 Back Story:
 The main character of the game is James Wasson, who struggles tremendously through all the hardships the class has to offer. This includes multiple all-nighters, hundreds of red bulls, and year's worth of therapy because of PTSD.
 Will he beat the final boss and finish the class with at most a C, or will he die and change his major? Play the game, and decide his fate... His future is in your hands.
