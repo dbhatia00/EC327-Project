@@ -8,7 +8,7 @@ public class Enemy1 : EnemyObjects
     
     void Start()
     {
-        rightEdge = true;
+        //rightEdge = true;
         startPos = transform.position;
     }
 

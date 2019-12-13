@@ -21,8 +21,8 @@ public class JustToQuit : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
         }
     }
 }

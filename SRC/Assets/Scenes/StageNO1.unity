@@ -555,19 +555,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 217413440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d345e087d64e142a4eb231720076c8, type: 3}
+  m_Script: {fileID: 11500000, guid: cc8b5247cad69be49b53c101071e575d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PointNum: 0
   loop: 0
   DriftV: 0
-  RotateW: 10
+  RotateW: 13
   RoutL:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   Drift_1_Rotate_2: 2
+  Start_From0: 0
 --- !u!1 &399660091
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f12c276a1ec224c813d2f097d1eb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BulletModel: {fileID: 0}
 --- !u!1001 &1295568205
 PrefabInstance:
   m_ObjectHideFlags: 0
