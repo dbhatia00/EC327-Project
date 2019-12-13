@@ -6,6 +6,7 @@ public class Enemy3 : EnemyObjects
 {
     // Start is called before the first frame update
     public GameObject BulletRU, BulletLU;
+    public CharacterHealth Healthbar;
     void Start()
     {
         //rightEdge = true;
@@ -24,7 +25,7 @@ public class Enemy3 : EnemyObjects
 
     protected override void OnTriggerEnter2D(Collider2D other)
     {
-        base.OnTriggerEnter2D(other);
+        Healthbar.DealDamage(2);
     }
 
     protected override void move()
@@ -60,4 +61,5 @@ public class Enemy3 : EnemyObjects
     {
         base.doFire();
     }
+
 }
