@@ -17,7 +17,7 @@ In order to build our project, please clone the repo and navigate to the CP bran
 Source Code Location:
 Please navigate to SRC/Assets. The code that we wrote is contained within the C# files in said folder. 
 
-Youtube Video Link:
+Youtube Video Link:https://youtu.be/SnTBqyWHxTY
 
 (Apologies for the watermark, all of the free software would play at a horrible frame rate)
 
