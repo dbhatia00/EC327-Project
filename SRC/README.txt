@@ -10,6 +10,13 @@ Our project is a 2D game similar to Mega Man where there is a stage with moving 
 Build Overview:
 In order to build our project, please clone the repo and navigate to the CP branch (it should be the default branch). Navigate to the Program folder, find the executable file, and run the program. 
 
+=====Game Control=====
+  <- & -> : moving left and right
+  up arrow : jump
+  space : shot
+  "R" : restart the game (in case the play is killed or drop out of the stage)
+=======================
+
 Youtube Video Link:
 
 Source Code Location:
